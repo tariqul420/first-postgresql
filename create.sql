@@ -11,10 +11,10 @@ CREATE DATABASE first_db;
 -- create a new table
 CREATE TABLE users(
   id SERIAL PRIMARY KEY,
-  name VARCHAR(30),
-  email VARCHAR(80) UNIQUE,
-  contactNo VARCHAR(11),
-  password VARCHAR(12),
+  name VARCHAR(30) NOT NULL,
+  email VARCHAR(80) UNIQUE NOT NULL,
+  contactNo VARCHAR(11) UNIQUE,
+  password VARCHAR(12) NOT NULL,
   createdAt DATE DEFAULT NOW()
 );
 
@@ -41,4 +41,4 @@ SELECT datname FROM pg_database;
 
 -- insert into table_name (columns) values ()
 INSERT INTO users(name, email, contactNo, password) VALUES('Tariqul1', 'tariqul@gmail1.com', '01743892058', '123456'),
-('Tariqul2', 'tariqul2@gmail.com', '01743892058', '123456');
+('Tariqul2', 'tariqul2@gmail.com', '01743892059', '123456');
