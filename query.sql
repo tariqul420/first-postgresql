@@ -41,3 +41,6 @@ SELECT name, district FROM users WHERE district IN('Dhaka', 'Khulna')
 
 -- ! between
 SELECT * FROM users WHERE age BETWEEN 20 AND 30; 
+
+-- ! is NULL
+SELECT name, age FROM users WHERE age IS NULL
