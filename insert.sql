@@ -101,5 +101,10 @@ INSERT INTO users(name, email, age, contactNo, district, password, createdAt) VA
 ('Lina Pacomio', 'serafinabuscetta@example.com', 26, '01862735764', 'Sylhet', '7+5lLt^gc^lV', '2025-03-26 01:49:22'),
 ('Dott. Temistocle Cesaroni', 'piacentiniermenegildo@example.net', 77, '01965738508', 'Chittagong', '^Jp2Vo9y6mB$', '2025-03-05 14:52:17');
 
+INSERT INTO orders (userId, total, quantity) VALUES (15, 300, 1)
+
 -- select all data from users table
 SELECT * FROM users;
+
+-- select all data from orders table
+SELECT * FROM orders;

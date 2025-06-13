@@ -20,6 +20,13 @@ CREATE TABLE users (
   createdAt TIMESTAMP DEFAULT NOW()
 );
 
+CREATE TABLE orders (
+  id SERIAL PRIMARY KEY,
+  userId INT NOT NULL,
+  total INT,
+  quantity INT
+);
+
 -- drop database
 DROP DATABASE first_db;
 
